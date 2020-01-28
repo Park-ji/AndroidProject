@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentSub2Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IntentSub2Activity 실행중입니다."/>
+    <Button
+        android:id="@+id/returnbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나이를 되돌려드립니다"/>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+    <!-- gravity : 정렬기준-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/api30" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용하는 폰 기종을 선택하세요"
+        android:textSize="30dp" />
+
+    <!-- 다중선택이므로 checked 속성을 다중으로 주면 중복 체크-->
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안드로이드폰"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이폰"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="블랙베리폰" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연령대를 선택하세요"
+        android:textSize="30dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <!-- 단일 선택이므로 checked 속성을 다중으로 주면 10대를 누른 후 20대를 누른 것 과 같은 효과 = 20대에만 체크가 됨 -->
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10대"
+            android:checked="true" />
+
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20대"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30대 이상" />
+
+    </RadioGroup>
+
+    <!-- 버튼의 배경색 지정 / 글자 내용, 크기, 색상 지정-->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:text="버튼1"
+        android:textColor="#ff0000"
+        android:textSize="20px" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:text="버튼2"
+        android:textColor="#ffff00"
+        android:textSize="20px" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff00ff"
+        android:text="버튼3"
+        android:textColor="#f0f0f0"
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/keyResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="보여주는 문자열 보여주는 문자열 보여주는 문자열 보여주는 문자열 보여주는 문자열"
+        android:textColor="#0000ff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:singleLine="true" />
+    <!-- 텍스트뷰의 크기가 화면 크기를 넘어갈 때 자동으로 줄바꿈을 해줄 것인지 결정 default = false = multiLine -->
+
+    <EditText
+        android:id="@+id/key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="키보드 입력 가능합니다." />
+
+    <Button
+        android:id="@+id/inputBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="입력완료" />
+
+    <TextView
+        android:id="@+id/auto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://www.google.com"
+        android:autoLink="web" />
+
+    <TextView
+        android:id="@+id/auto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+82-10-7744-0821"
+        android:autoLink="phone" />
+
+    <TextView
+        android:id="@+id/auto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ye_seul@kakao.com"
+        android:autoLink="email" />
+
+    <TextView
+        android:id="@+id/auto4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="620 Eighth Avenue New York, NY 10018"
+        android:autoLink="map" />
+    <!-- 한국 주소는 아직 지원되지 않음 -->
+
+</LinearLayout>
+</ScrollView>

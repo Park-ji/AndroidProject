@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="철수" android:textSize="30sp" android:layout_marginRight="20px" android:id="@+id/chulsoo"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="영희" android:textSize="20sp" android:id="@+id/younghee" android:layout_toRightOf="@id/chulsoo"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="몽룡" android:textSize="30sp" android:id="@+id/mongryong" android:layout_marginLeft="10px" android:layout_alignParentRight="true" android:layout_below="@id/younghee"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="춘향" android:textSize="20sp" android:id="@+id/chunhyang" android:layout_alignBottom="@id/mongryong" android:layout_toLeftOf="@id/mongryong"/>
+
+</RelativeLayout>

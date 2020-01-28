@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="autolist">
+        <item>java</item>
+        <item>android</item>
+        <item>spring</item>
+        <item>servlet</item>
+        <item>jsp</item>
+        <item>andre</item>
+        <item>자바</item>
+        <item>자바스크립트</item>
+        <item>자바고급</item>
+    </string-array>
+
+    <!--
+    다른 xml에서 사용? @string-array/autolist
+    액티비티에서 사용? getResoures()메소드 사용 = vlaues안에 있는 소스 다 가지고 옴 + R.array.autolist
+    -->
+
+    <string-array name="listdata">
+        <item> 자바 </item>
+        <item> SQL </item>
+        <item> ANDROID </item>
+        <item> SPRING </item>
+        <item> MYBATIS </item>
+    </string-array>
+</resources>

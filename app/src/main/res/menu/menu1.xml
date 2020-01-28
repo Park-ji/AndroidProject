@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="배경색(빨강)"
+        android:id="@+id/itemRed" />
+    <item android:title="배경색(녹색)"
+        android:id="@+id/itemGreen" />
+    <item android:title="배경색(파랑)"
+        android:id="@+id/itemBlue" />
+    <item android:title="버튼 변경">
+        <menu>
+            <item android:title="글씨 색상 변경(파랑색)"
+                android:id="@+id/btntext"/>
+            <item android:title="배경 색상 변경(녹색)"
+                android:id="@+id/btnbg"/>
+        </menu>
+    </item>
+
+    <item android:title="기타"
+        android:id="@+id/etc"
+        android:icon="@drawable/google"
+        app:showAsAction="always"
+        />
+    <!--showAsAction속성때문에 메뉴선택전에 이미 나와있음-->
+
+
+</menu>

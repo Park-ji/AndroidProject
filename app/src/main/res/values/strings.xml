@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">secondproject</string>
+    <string name="autotext">"자동완성뷰 테스트중입니다</string>
+
+</resources>
